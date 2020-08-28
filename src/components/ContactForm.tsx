@@ -8,7 +8,6 @@ import {
 	Input,
 	Button,
 	Flex,
-    
 } from '@chakra-ui/core'
 
 export default function ContactForm() {
@@ -20,7 +19,7 @@ export default function ContactForm() {
 		}
 		return error || true
 	}
-    function validateEmail(value) {
+	function validateEmail(value) {
 		let error
 		if (!value) {
 			error = 'Email is required'
@@ -41,13 +40,12 @@ export default function ContactForm() {
 	}
 	return (
 		<Flex
-			w={['90vw', '40vw', '30vw' ]}
+			w={['90vw', '40vw', '30vw']}
 			justifyContent='center'
 			alignItems='center'
-            m='auto'
+			m='auto'
 			mt='3rem'
-			mb='3rem'
-            >
+			mb='3rem'>
 			<form
 				onSubmit={handleSubmit(onSubmit)}
 				method='post'
@@ -61,53 +59,49 @@ export default function ContactForm() {
 							aria-label='Do not fill this out'></input>
 					</label>
 				</p>
-                <Flex w={1/2} display='inline-flex'>
-				<FormControl isInvalid={errors.name} isRequired>
-					<FormLabel htmlFor='name'>First name</FormLabel>
-					<Input
-						name='name'
-						placeholder='name'
-						ref={register({ validate: validateName })}
-					/>
-					<FormErrorMessage>
-						{errors.name && errors.name.message}
-					</FormErrorMessage>
-				</FormControl>
-                </Flex>
-                <Flex w={1/2} display='inline-flex'>
-				<FormControl>
-					<FormLabel htmlFor='lastName'>Last name</FormLabel>
-					<Input
-						name='lastName'
-						placeholder='last name'
-						
-					/>
-					<FormErrorMessage>
-						{errors.lastName && errors.lastName.message}
-					</FormErrorMessage>
-				</FormControl>
-                </Flex>
+				<Flex w={1 / 2} display='inline-flex'>
+					<FormControl isInvalid={errors.name} isRequired>
+						<FormLabel htmlFor='name'>First name</FormLabel>
+						<Input
+							name='name'
+							placeholder='name'
+							ref={register({ validate: validateName })}
+						/>
+						<FormErrorMessage>
+							{errors.name && errors.name.message}
+						</FormErrorMessage>
+					</FormControl>
+				</Flex>
+				<Flex w={1 / 2} display='inline-flex'>
+					<FormControl>
+						<FormLabel htmlFor='lastName'>Last name</FormLabel>
+						<Input name='lastName' placeholder='last name' />
+						<FormErrorMessage>
+							{errors.lastName && errors.lastName.message}
+						</FormErrorMessage>
+					</FormControl>
+				</Flex>
 				<FormControl isInvalid={errors.message} isRequired>
 					<FormLabel htmlFor='email'>Email address</FormLabel>
 					<Input
 						type='email'
-						id='email'
+						name='email'
 						aria-describedby='email-helper-text'
-                        placeholder="We'll never share your email address"
-                        ref={register({ validate: validateEmail })}
+						placeholder="We'll never share your email address"
+						ref={register({ validate: validateEmail })}
 					/>
 				</FormControl>
 				<FormControl>
 					<FormLabel htmlFor='name'>Company Name</FormLabel>
 					<Input name='companyName' placeholder='company name' />
-                    <FormErrorMessage>
+					<FormErrorMessage>
 						{errors.email && errors.email.message}
 					</FormErrorMessage>
 				</FormControl>
-				<FormControl isInvalid={errors.message} isRequired >
+				<FormControl isInvalid={errors.message} isRequired>
 					<FormLabel htmlFor='name'>Message</FormLabel>
 					<Input
-                        h='6rem'
+						h='6rem'
 						name='message'
 						placeholder='message'
 						ref={register({ validate: validateMessage })}

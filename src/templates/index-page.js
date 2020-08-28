@@ -5,6 +5,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import ProductRoll from '../components/ProductRoll'
 import ContactForm from '../components/ContactForm.tsx'
+import FindUs from '../components/FindUs.tsx'
 
 export const IndexPageTemplate = ({
 	image,
@@ -70,6 +71,7 @@ export const IndexPageTemplate = ({
 			</div>
 		</div>
 		<ProductRoll />
+		{/* <FindUs/> */}
 		<ContactForm/>
 	</div>
 )

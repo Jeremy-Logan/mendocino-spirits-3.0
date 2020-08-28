@@ -23,6 +23,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Featured Image", name: "featuredimage", widget: image}
+      - {label: "Color Scheme", name: "colorscheme", widget: select, options: [{label: "Wheat", value: "wheat" }, {label: "Storm", value: "storm"}]}
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
