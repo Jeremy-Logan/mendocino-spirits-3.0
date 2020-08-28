@@ -1,5 +1,5 @@
 ---
-templateKey: products
+templateKey: product-post
 sortnumber: 2
 title: Captain Fletcher's Private Reserve
 description: >+
