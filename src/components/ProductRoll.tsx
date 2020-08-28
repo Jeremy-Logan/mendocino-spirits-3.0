@@ -1,44 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
-import { jsx } from 'theme-ui'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 import { Grid, Box, Flex, Heading, Text, Icon } from '@chakra-ui/core'
 import WheatYellow from '../../static/img/wheat-yellow.svg'
 
-const ProductSection = styled(Flex)`
-    justify-contents: center;
-    align-items: center
-    position: relative;
-	sx={{
-		m: [ 0, null, null],
-		mt: [ '2rem', null, '5rem'],
 
-	}}
 
-`
-const Description = styled(Box)`
-    // @ts-ignore
-    font-size: 1rem;
-    font-weight: 300;
-    background-color: #e7e4bb;
-	p: {2};
-	sx: {
-		fontSize: [ '0.6rem', '0.8rem', '0.8rem']
-	}
-	}
-`
-
-const ImageWrapper = styled(Box)`
-	position: absolute;
-	align: 'right';
-	min-width: 20vw;
-`
-const BottleImage = styled(Img)`
-	background-color: white;
-	height: auto;
-`
 
 const ProductRoll = ({ data }) => {
 	// const { markdownRemark } = data

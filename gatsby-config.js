@@ -58,25 +58,23 @@ module.exports = {
 				],
 			},
 		},
-    `gatsby-plugin-typescript`,
-    'gatsby-plugin-theme-ui',
+		`gatsby-plugin-typescript`,
 
-					'gatsby-theme-style-guide',
+		{
+			resolve: `gatsby-plugin-prefetch-google-fonts`,
+			options: {
+				fonts: [
 					{
-						resolve: `gatsby-plugin-prefetch-google-fonts`,
-						options: {
-							fonts: [
-								{
-									family: `Alice`,
-									variants: [`200`, `400`, '600', `700`],
-								},
-								{
-									family: `Assistant`,
-									variants: [`200`, `400`, '600', `700`],
-								},
-							],
-						},
+						family: `Alice`,
+						variants: [`200`, `400`, '600', `700`],
 					},
+					{
+						family: `Assistant`,
+						variants: [`200`, `400`, '600', `700`],
+					},
+				],
+			},
+		},
 		{
 			resolve: 'gatsby-plugin-netlify-cms',
 			options: {
