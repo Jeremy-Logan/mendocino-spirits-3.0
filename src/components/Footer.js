@@ -1,115 +1,74 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { Flex, Box, List, ListItem } from '@chakra-ui/core'
+import {
+	FaTwitterSquare,
+	FaFacebookSquare,
+	FaInstagramSquare,
+} from 'react-icons/fa'
 
-import logo from '../img/logo.svg'
-import facebook from '../img/social/facebook.svg'
-import instagram from '../img/social/instagram.svg'
-import twitter from '../img/social/twitter.svg'
-import vimeo from '../img/social/vimeo.svg'
-
-const Footer = class extends React.Component {
-  render() {
-    return (
-      <footer className="footer has-background-black has-text-white-ter">
-        <div className="content has-text-centered">
-          <img
-            src={logo}
-            alt="Kaldi"
-            style={{ width: '14em', height: '10em' }}
-          />
-        </div>
-        <div className="content has-text-centered has-background-black has-text-white-ter">
-          <div className="container has-background-black has-text-white-ter">
-            <div style={{ maxWidth: '100vw' }} className="columns">
-              <div className="column is-4">
-                <section className="menu">
-                  <ul className="menu-list">
-                    <li>
-                      <Link to="/" className="navbar-item">
-                        Home
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/about">
-                        About
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/products">
-                        Products
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact/examples">
-                        Form Examples
-                      </Link>
-                    </li>
-                    <li>
-                      <a
-                        className="navbar-item"
-                        href="/admin/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Admin
-                      </a>
-                    </li>
-                  </ul>
-                </section>
-              </div>
-              <div className="column is-4">
-                <section>
-                  <ul className="menu-list">
-                    <li>
-                      <Link className="navbar-item" to="/blog">
-                        Latest Stories
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact">
-                        Contact
-                      </Link>
-                    </li>
-                  </ul>
-                </section>
-              </div>
-              <div className="column is-4 social">
-                <a title="facebook" href="https://facebook.com">
-                  <img
-                    src={facebook}
-                    alt="Facebook"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="twitter" href="https://twitter.com">
-                  <img
-                    className="fas fa-lg"
-                    src={twitter}
-                    alt="Twitter"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="instagram" href="https://instagram.com">
-                  <img
-                    src={instagram}
-                    alt="Instagram"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="vimeo" href="https://vimeo.com">
-                  <img
-                    src={vimeo}
-                    alt="Vimeo"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-    )
-  }
+const Footer = () => {
+	return (
+		<Flex backgroundColor='#552818'>
+			<Flex w={1 / 2} justifyItems='flex-start' p='2rem'>
+				<Box  flexDirection='column' pl='5rem'>
+					<List color='#F7E4C5'>
+						<ListItem>
+							<Link to='/'>Home</Link>
+						</ListItem>
+						<ListItem>
+							<Link to='/about'>Products</Link>
+						</ListItem>
+						<ListItem>
+							<Link to='/products'>About</Link>
+						</ListItem>
+						<ListItem>
+							<Link to='/contact/examples'>Find Us</Link>
+						</ListItem>
+						<ListItem>
+							<Link to='/'>Contact</Link>
+						</ListItem>
+					</List>
+				</Box>
+        </Flex>
+        <Flex w={1 / 2} flexDirection='row'
+					alignItems='center'
+					justifyItems='space-between'
+					justify='flex-end'>
+				<Box
+					
+					
+          p={2}>
+					<a title='facebook' href='https://facebook.com'>
+						<Box
+            m='0.5rem'
+							as={FaFacebookSquare}
+							alt='Facebook'
+							size='1.5rem'
+							color='#F7E4C5'
+						/>
+					</a>
+					<Box
+          m='0.5rem'
+						as={FaTwitterSquare}
+						alt='Twitter'
+						size='1.5rem'
+						color='#F7E4C5'>
+						<a title='twitter' href='https://twitter.com' />{' '}
+					</Box>
+					<a title='instagram' href='https://instagram.com'>
+						<Box
+            m='0.5rem'
+							as={FaInstagramSquare}
+							alt='Instagram'
+							size='1.5rem'
+							color='#F7E4C5'
+						/>
+					</a>
+				</Box>
+			</Flex>
+		</Flex>
+	)
 }
 
 export default Footer

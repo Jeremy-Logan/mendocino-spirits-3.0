@@ -1,15 +1,19 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link as GatsbyLink } from 'gatsby'
 import styled from 'styled-components'
 import Logo from './Logo'
+import { Text } from "@chakra-ui/core";
 
-const NavItem = styled(Link)`
+const NavItem = styled(GatsbyLink)`
     margin: 2vw;
     transition: all 200ms ease-in;
     position: relative;
     align-items: center;
     text-align: center;
     justify-content: inherit;
+    
+    
+    
 
     :after {
         position: absolute;
@@ -35,27 +39,27 @@ const NavItem = styled(Link)`
         padding: 5px 0;
         font-size: 1.2rem;
         z-index: 6;
-        color: #8e5039;
+
     }
 `
-const MenuLogo = styled(Link)`
-    @media (max-width: 768px) {
-        display: none;
-    }
+const MenuLogo = styled(GatsbyLink)`
+	@media (max-width: 768px) {
+		display: none;
+	}
 `
 
 const NavbarLinks = () => {
-    return (
-        <>
-            <NavItem to="/"> Products </NavItem>
-            <NavItem to="/"> About </NavItem>
-            <MenuLogo to="/" style={{ minWidth: 300 }}>
-                <Logo />
-            </MenuLogo>
-            <NavItem to="/"> Find Us </NavItem>
-            <NavItem to="/"> Contact </NavItem>
-        </>
-    )
+	return (
+		<>
+				<Text color='#F7E4C5' fontSize='lg' letterSpacing='wide'><NavItem to='/'style={{}}>Products </NavItem></Text>
+				<Text color='#F7E4C5' fontSize='lg' letterSpacing='wide'><NavItem to='/'style={{}}>About </NavItem></Text>
+				<MenuLogo to='/' style={{ minWidth: 300 }}>
+					<Logo />
+				</MenuLogo>
+				<Text color='#F7E4C5' fontSize='lg' letterSpacing='wide'><NavItem to='/'style={{}}>Find Us </NavItem></Text>
+				<Text color='#F7E4C5' fontSize='lg' letterSpacing='wide'><NavItem to='/'style={{}}>Contact </NavItem></Text>
+		</>
+	)
 }
 
 export default NavbarLinks
