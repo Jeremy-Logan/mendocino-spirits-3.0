@@ -8,9 +8,10 @@ import {
 	Input,
 	Button,
 	Flex,
+	Box
 } from '@chakra-ui/core'
 
-export default function ContactForm() {
+const ContactForm = () => {
 	const { handleSubmit, errors, register, formState } = useForm()
 	function validateName(value) {
 		let error
@@ -44,8 +45,12 @@ export default function ContactForm() {
 			justifyContent='center'
 			alignItems='center'
 			m='auto'
-			mt='3rem'
-			mb='3rem'>
+			mt='5rem'
+			mb='3rem'
+			flexDirection='column'>
+			
+			<Box m='1rem' fontSize='3rem'><h3>Contact Us</h3></Box>
+			<Box mb='5rem'><p>If you’d like more information about our spirits and how to find them, or if you just want to say hello, please submit the form below.</p></Box>
 			<form
 				onSubmit={handleSubmit(onSubmit)}
 				method='post'
@@ -121,3 +126,5 @@ export default function ContactForm() {
 		</Flex>
 	)
 }
+
+export default ContactForm

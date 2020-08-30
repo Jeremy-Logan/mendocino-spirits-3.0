@@ -9,9 +9,9 @@ import {
 
 const Footer = () => {
 	return (
-		<Flex backgroundColor='#552818'>
+		<Flex backgroundColor='#552818' h='20vh'>
 			<Flex w={1 / 2} justifyItems='flex-start' p='2rem'>
-				<Box  flexDirection='column' pl='5rem'>
+				<Box flexDirection='column' pl='5rem'>
 					<List color='#F7E4C5'>
 						<ListItem>
 							<Link to='/'>Home</Link>
@@ -30,18 +30,17 @@ const Footer = () => {
 						</ListItem>
 					</List>
 				</Box>
-        </Flex>
-        <Flex w={1 / 2} flexDirection='row'
-					alignItems='center'
-					justifyItems='space-between'
-					justify='flex-end'>
-				<Box
-					
-					
-          p={2}>
+			</Flex>
+			<Flex
+				w={1 / 2}
+				flexDirection='row'
+				alignItems='center'
+				justifyItems='space-between'
+				justify='flex-end'>
+				<Box p={2}>
 					<a title='facebook' href='https://facebook.com'>
 						<Box
-            m='0.5rem'
+							m='0.5rem'
 							as={FaFacebookSquare}
 							alt='Facebook'
 							size='1.5rem'
@@ -49,7 +48,7 @@ const Footer = () => {
 						/>
 					</a>
 					<Box
-          m='0.5rem'
+						m='0.5rem'
 						as={FaTwitterSquare}
 						alt='Twitter'
 						size='1.5rem'
@@ -58,7 +57,7 @@ const Footer = () => {
 					</Box>
 					<a title='instagram' href='https://instagram.com'>
 						<Box
-            m='0.5rem'
+							m='0.5rem'
 							as={FaInstagramSquare}
 							alt='Instagram'
 							size='1.5rem'

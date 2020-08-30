@@ -3,9 +3,12 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
+
 import ProductRoll from '../components/ProductRoll'
+import About from '../components/About.tsx'
 import ContactForm from '../components/ContactForm.tsx'
 import FindUs from '../components/FindUs.tsx'
+
 
 export const IndexPageTemplate = ({
 	image,
@@ -16,7 +19,9 @@ export const IndexPageTemplate = ({
 	description,
 	intro,
 }) => (
-	<div>
+	<>
+	<div style={{height:'100%'}}>
+	
 		<div
 			style={{
 				backgroundImage: `url(${
@@ -70,10 +75,20 @@ export const IndexPageTemplate = ({
 				</h3>
 			</div>
 		</div>
+		
 		<ProductRoll />
-		{/* <FindUs/> */}
+		<About/>
+		
+		<FindUs/>
+		
 		<ContactForm/>
+		
+		
+		
+	
 	</div>
+	
+	</>
 )
 
 IndexPageTemplate.propTypes = {

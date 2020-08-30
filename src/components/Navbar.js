@@ -15,7 +15,7 @@ const NavLogo = styled(Link)`
 `
 
 const OpenLinks = styled(NavbarLinks)`
-	color:'#8E5039'
+	color:'#552818'
 `
 const Navigation = styled.nav`
     position: fixed;
@@ -37,6 +37,7 @@ const Navigation = styled.nav`
 		left: 0;
 		right: 0;
 		left: 0;
+		
 	}
 `
 const Toggle = styled.div`
@@ -46,6 +47,7 @@ const Toggle = styled.div`
 	padding: 0 0 0 16vw;
 	@media (max-width: 768px) {
 		display: flex;
+		
 	}
 `
 
@@ -60,9 +62,11 @@ const Navbox = styled.div`
 		justify-content: flex-start;
 		padding: 5px;
 		background-color: #fff;
+		color:'#552818'
 		transition: all 0.3s ease-in;
 		top: 15vh;
 		right: ${(props) => (props.open ? '-100%' : '0')};
+		
 	}
 `
 
@@ -111,11 +115,11 @@ const Navbar = () => {
 				{navbarOpen ? <Hamburger open /> : <Hamburger />}
 			</Toggle>
 			{navbarOpen ? (
-				<Navbox>
-					<NavbarLinks/>
+				<Navbox >
+					<NavbarLinks />
 				</Navbox>
 			) : (
-				<Navbox open>
+				<Navbox open >
 					<OpenLinks/>
 				</Navbox>
 			)}

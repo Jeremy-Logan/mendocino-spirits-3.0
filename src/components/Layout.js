@@ -10,9 +10,10 @@ import { withPrefix } from 'gatsby'
 const TemplateWrapper = ({ children }) => {
 	const { title, description } = useSiteMetadata()
 	return (
+		<>
 		<ThemeProvider theme={customTheme}>
     <CSSReset/>
-			<div>
+			<div style={{height:'100%'}}>
 				<Helmet>
 					<html lang='en' />
 					<title>{title}</title>
@@ -53,9 +54,14 @@ const TemplateWrapper = ({ children }) => {
 				</Helmet>
 				<Navbar />
 				<div>{children}</div>
-				<Footer />
+				
+		<Footer />
 			</div>
+			
 		</ThemeProvider>
+		
+		
+		</>
 	)
 }
 
