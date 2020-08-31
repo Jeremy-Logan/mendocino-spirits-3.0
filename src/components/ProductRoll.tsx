@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 import { Grid, Box, Flex, Heading, Text, Icon } from '@chakra-ui/core'
 import WheatYellow from '../../static/img/wheat-yellow.svg'
+import WheatRust from '../../static/img/wheat-rust.svg'
 
 const ProductRoll = ({ data }) => {
 	// const { markdownRemark } = data
