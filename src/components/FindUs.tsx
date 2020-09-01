@@ -9,7 +9,7 @@ const FindUs = ({ data }) => {
 	const { image } = data.imageSharp.fluid
 
 	return (
-		<div style={{ marginTop: '5vh', minH: '70vh' }}>
+		<div style={{ marginTop: '5vh', minH: '70vh' }} id='findUs'>
 			<BackgroundImage
 				fluid={data.imageSharp.fluid}
 				backgroundColor='#420D06'

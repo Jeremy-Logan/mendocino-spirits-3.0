@@ -120,7 +120,7 @@ const ProductRoll = ({ data }) => {
 	)
 
 	return (
-		<div>
+		<div id='products' >
 			{posts &&
 				posts.map(({ node: post }) =>
 					post.frontmatter.colorscheme === 'wheat' ? (

@@ -3,8 +3,9 @@ import { Link as GatsbyLink } from 'gatsby'
 import styled from 'styled-components'
 import Logo from './Logo'
 import { Text } from "@chakra-ui/core";
+import {AnchorLink} from 'gatsby-plugin-anchor-links'
 
-const NavItem = styled(GatsbyLink)`
+const NavItem = styled(AnchorLink)`
     margin: 2vw;
     transition: all 200ms ease-in;
     position: relative;
@@ -51,13 +52,13 @@ const MenuLogo = styled(GatsbyLink)`
 const NavbarLinks = () => {
 	return (
 		<>
-				<Text color={['#552818', '#552818', '#F7E4C5']} fontSize='lg' letterSpacing='wide'><NavItem to='/'style={{}}>Products </NavItem></Text>
-				<Text color={['#552818', '#552818', '#F7E4C5']} fontSize='lg' letterSpacing='wide'><NavItem to='/'style={{}}>About </NavItem></Text>
+				<Text color={['#552818', '#552818', '#F7E4C5']} fontSize='lg' letterSpacing='wide'><NavItem to='/#products' title='Products' >Products </NavItem></Text>
+				<Text color={['#552818', '#552818', '#F7E4C5']} fontSize='lg' letterSpacing='wide'><NavItem to='/#about' title='About' >About </NavItem></Text>
 				<MenuLogo to='/' style={{ minWidth: 300 }}>
 					<Logo />
 				</MenuLogo>
-				<Text color={['#552818', '#552818', '#F7E4C5']} fontSize='lg' letterSpacing='wide'><NavItem to='/'style={{}}>Find Us </NavItem></Text>
-				<Text color={['#552818', '#552818', '#F7E4C5']} fontSize='lg' letterSpacing='wide'><NavItem to='/'style={{}}>Contact </NavItem></Text>
+				<Text color={['#552818', '#552818', '#F7E4C5']} fontSize='lg' letterSpacing='wide'><NavItem to='/#findUs' title={'Find Us'} >Find Us </NavItem></Text>
+				<Text color={['#552818', '#552818', '#F7E4C5']} fontSize='lg' letterSpacing='wide'><NavItem to='/#contact' title='Contact' >Contact </NavItem></Text>
 		</>
 	)
 }

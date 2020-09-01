@@ -9,7 +9,7 @@ const About = ({ data }) => {
 	const { image } = data.imageSharp.fluid
 
 	return (
-		<div style={{ marginTop: '10vh', minH: '70vh'  }}>
+		<div style={{ marginTop: '10vh', minH: '70vh'  }} id='about'>
 			<Flex
 				flex='space-between'
 				justifyContent='center'

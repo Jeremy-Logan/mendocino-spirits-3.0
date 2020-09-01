@@ -74,12 +74,12 @@ export const IndexPageTemplate = ({
 				</Box>
 			</Flex>
 
-			<ProductRoll />
-			<About />
+			<ProductRoll title='Products' id='products' />
+			<About title='About' />
 
-			<FindUs />
+			<FindUs title='Find Us'/>
 
-			<ContactForm />
+			<ContactForm title='Contact'/>
 		</div>
 	</>
 )

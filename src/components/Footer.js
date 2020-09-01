@@ -6,6 +6,7 @@ import {
 	FaFacebookSquare,
 	FaInstagramSquare,
 } from 'react-icons/fa'
+import {AnchorLink} from 'gatsby-plugin-anchor-links'
 
 const Footer = () => {
 	return (
@@ -14,19 +15,19 @@ const Footer = () => {
 				<Box flexDirection='column' pl={['1rem', '5rem']}>
 					<List color='#F7E4C5'>
 						<ListItem>
-							<Link to='/'>Home</Link>
+							<AnchorLink to='/'>Home</AnchorLink>
 						</ListItem>
 						<ListItem>
-							<Link to='/about'>Products</Link>
+							<AnchorLink to='/#products'>Products</AnchorLink>
 						</ListItem>
 						<ListItem>
-							<Link to='/products'>About</Link>
+							<AnchorLink to='/#about'>About</AnchorLink>
 						</ListItem>
 						<ListItem>
-							<Link to='/contact/examples'>Find Us</Link>
+							<AnchorLink to='/#findUs'>Find Us</AnchorLink>
 						</ListItem>
 						<ListItem>
-							<Link to='/'>Contact</Link>
+							<AnchorLink to='/#contact'>Contact</AnchorLink>
 						</ListItem>
 					</List>
 				</Box>

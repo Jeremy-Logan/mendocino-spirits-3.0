@@ -47,7 +47,7 @@ const ContactForm = () => {
 			m='auto'
 			mt='5rem'
 			mb='3rem'
-			flexDirection='column'>
+			flexDirection='column' id='contact'>
 			
 			<Box m='1rem' fontSize='3rem'><h3>Contact Us</h3></Box>
 			<Box mb='5rem'><p>If you’d like more information about our spirits and how to find them, or if you just want to say hello, please submit the form below.</p></Box>

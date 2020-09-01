@@ -58,6 +58,12 @@ module.exports = {
 				],
 			},
 		},
+		{
+			resolve: 'gatsby-plugin-anchor-links',
+			options: {
+				offset: -120,
+			},
+		},
 		`gatsby-plugin-typescript`,
 
 		{
