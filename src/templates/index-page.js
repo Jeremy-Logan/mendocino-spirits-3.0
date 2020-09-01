@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import { Flex, Box, Heading } from '@chakra-ui/core'
-import Img from 'gatsby-image'
+
 
 import ProductRoll from '../components/ProductRoll'
 import About from '../components/About.tsx'

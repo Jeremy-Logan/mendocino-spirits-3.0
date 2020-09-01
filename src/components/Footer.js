@@ -11,7 +11,7 @@ const Footer = () => {
 	return (
 		<Flex backgroundColor='#552818' h='20vh'>
 			<Flex w={1 / 2} justifyItems='flex-start' p='2rem'>
-				<Box flexDirection='column' pl='5rem'>
+				<Box flexDirection='column' pl={['1rem', '5rem']}>
 					<List color='#F7E4C5'>
 						<ListItem>
 							<Link to='/'>Home</Link>

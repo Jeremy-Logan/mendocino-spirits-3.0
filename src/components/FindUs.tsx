@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Box, List, ListItem } from '@chakra-ui/core'
+import { Flex, Box, List, ListItem, Text } from '@chakra-ui/core'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 import BackgroundImage from 'gatsby-background-image'
@@ -16,12 +16,12 @@ const FindUs = ({ data }) => {
 				minW='100vw'
 				minH='90vh'
 				zIndex='-2'>
-				<Flex flex='flex-end' justifyItems='right' alignItems='center'>
-					<Box w='55vw'></Box>
-					<Box backgroundColor='#8E5039' minH='70vh' w='30vw'>
+				<Flex flex={['center', 'flex-end']} justifyItems={['center', 'right']} alignItems='center'>
+					<Box w={['100vw', '55vw']}></Box>
+					<Box backgroundColor='#8E5039' minH='70vh' w={['100vw', '30vw']}>
 						<Flex flexDirection='column' justifyContent='center' m='2rem' color='#F7E4C5' >
 							<Box fontSize='2rem'  >
-								<h2>Find our spirits at these locations:</h2>
+								<Text as='h2' fontSize={['1.5rem', '2rem']}>Find our spirits at these locations:</Text>
 							</Box>
 							<Flex FlexDirection='column' justifyContent='center' m='1.5rem'>
 								<Box>

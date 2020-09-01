@@ -22,7 +22,6 @@ const ProductRoll = ({ data }) => {
 			overflow='hidden'>
 			<Box
 				w={1 / 16}
-				align='right'
 				minW={['40vw', '20vw', '10vw']}
 				mr='-1vw'
 				zIndex={2}>
@@ -54,6 +53,7 @@ const ProductRoll = ({ data }) => {
 			<Box
 				position='absolute'
 				right={1}
+				top={['15vh', '0.5']}
 				w={1 / 2}
 				height='80vh'
 				maxWidth='60vw'
@@ -74,26 +74,15 @@ const ProductRoll = ({ data }) => {
 			mt='5rem'
 			overflow='hidden'>
 			<Box
-				w={1 / 16}
-				align='right'
-				minW={['40vw', '20vw', '10vw']}
-				mr='-1vw'
-				zIndex={2}>
-				<Img
-					h='auto'
-					fluid={post.frontmatter.featuredimage.childImageSharp.fluid}
-					alt={`${post.frontmatter.title}`}
-				/>
-			</Box>
-			<Box
 				w={1 / 2}
 				pos='relative'
 				backgroundColor='#8B8B8B'
 				p={['10', '20']}
-				pr={['10vw', '20vw']}
-				pl={['10vw', '10vw']}
+				pl={['10vw', '20vw']}
+				pr={['10vw', '10vw']}
 				fontSize={['sm', 'md', 'lg']}
-				ml='-5vw'>
+				ml='-5vw'
+>
 				<Heading
 					as='h2'
 					fontWeight='700'
@@ -105,15 +94,27 @@ const ProductRoll = ({ data }) => {
 				</Text>
 			</Box>
 			<Box
+				w={1 / 16}
+				minW={['40vw', '20vw', '10vw']}
+				ml='-3vw'
+				zIndex={2}>
+				<Img
+					h='auto'
+					fluid={post.frontmatter.featuredimage.childImageSharp.fluid}
+					alt={`${post.frontmatter.title}`}
+				/>
+			</Box>
+			<Box
 				position='absolute'
-				right={1}
+				left={1}
+				top={['5vh', '0.5']}
 				w={1 / 2}
 				height='80vh'
 				maxWidth='60vw'
 				zIndex={2}
-				marginRight='-8vw'
+				marginLeft='-15vw'
 				overflow='hidden'>
-				<img src={WheatYellow} />
+				<img src={WheatRust} />
 			</Box>
 		</Flex>
 	)

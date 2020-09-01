@@ -51,13 +51,13 @@ const MenuLogo = styled(GatsbyLink)`
 const NavbarLinks = () => {
 	return (
 		<>
-				<Text color='#F7E4C5' fontSize='lg' letterSpacing='wide'><NavItem to='/'style={{}}>Products </NavItem></Text>
-				<Text color='#F7E4C5' fontSize='lg' letterSpacing='wide'><NavItem to='/'style={{}}>About </NavItem></Text>
+				<Text color={['#552818', '#552818', '#F7E4C5']} fontSize='lg' letterSpacing='wide'><NavItem to='/'style={{}}>Products </NavItem></Text>
+				<Text color={['#552818', '#552818', '#F7E4C5']} fontSize='lg' letterSpacing='wide'><NavItem to='/'style={{}}>About </NavItem></Text>
 				<MenuLogo to='/' style={{ minWidth: 300 }}>
 					<Logo />
 				</MenuLogo>
-				<Text color='#F7E4C5' fontSize='lg' letterSpacing='wide'><NavItem to='/'style={{}}>Find Us </NavItem></Text>
-				<Text color='#F7E4C5' fontSize='lg' letterSpacing='wide'><NavItem to='/'style={{}}>Contact </NavItem></Text>
+				<Text color={['#552818', '#552818', '#F7E4C5']} fontSize='lg' letterSpacing='wide'><NavItem to='/'style={{}}>Find Us </NavItem></Text>
+				<Text color={['#552818', '#552818', '#F7E4C5']} fontSize='lg' letterSpacing='wide'><NavItem to='/'style={{}}>Contact </NavItem></Text>
 		</>
 	)
 }

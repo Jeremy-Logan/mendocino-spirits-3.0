@@ -29,7 +29,6 @@ const Navigation = styled.nav`
 	z-index: 3;
 	align-self: center;
 	font-size: 18px
-	color: #F7E4C5
 	@media (max-width: 768px) {
 		position: sticky;
 		height: 9vh;
@@ -62,7 +61,6 @@ const Navbox = styled.div`
 		justify-content: flex-start;
 		padding: 5px;
 		background-color: #fff;
-		color:'#552818'
 		transition: all 0.3s ease-in;
 		top: 15vh;
 		right: ${(props) => (props.open ? '-100%' : '0')};
