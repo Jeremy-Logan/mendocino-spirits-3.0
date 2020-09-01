@@ -109,10 +109,10 @@ const ProductRoll = ({ data }) => {
 				left={1}
 				top={['5vh', '0.5']}
 				w={1 / 2}
-				height='80vh'
-				maxWidth='60vw'
+				height='90vh'
+				maxWidth={['60vw', '40vw']}
 				zIndex={2}
-				marginLeft='-15vw'
+				marginLeft='-5vw'
 				overflow='hidden'>
 				<img src={WheatRust} />
 			</Box>

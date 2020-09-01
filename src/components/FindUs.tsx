@@ -21,12 +21,12 @@ const FindUs = ({ data }) => {
 					<Box backgroundColor='#8E5039' minH='70vh' w={['100vw', '30vw']}>
 						<Flex flexDirection='column' justifyContent='center' m='2rem' color='#F7E4C5' >
 							<Box fontSize='2rem'  >
-								<Text as='h2' fontSize={['1.5rem', '2rem']}>Find our spirits at these locations:</Text>
+								<Text as='h2' ml='2rem' fontSize={['1.5rem', '2rem']}>Find our spirits at these locations:</Text>
 							</Box>
 							<Flex FlexDirection='column' justifyContent='center' m='1.5rem'>
 								<Box>
 									<List m='2rem'>
-										<ListItem fontSize='1.5rem'><h3 style={{textDecoration: 'underline'}}>California</h3></ListItem>
+										<ListItem fontSize='1.3rem'><h3 style={{textDecoration: 'underline'}}>California</h3></ListItem>
 										<ListItem fontSize='1.2rem' pt='1rem'><p>The Store<br/>555 E. Main St.<br/>Townsville, CA  12345</p></ListItem>
                                         <ListItem fontSize='1.2rem' pt='1rem'><p>The Store<br/>555 E. Main St.<br/>Townsville, CA  12345</p></ListItem>
                                         <ListItem fontSize='1.2rem' pt='1rem'><p>The Store<br/>555 E. Main St.<br/>Townsville, CA  12345</p></ListItem>
@@ -35,7 +35,7 @@ const FindUs = ({ data }) => {
 								</Box>
 								<Box>
                                 <List m='2rem'>
-										<ListItem fontSize='1.5rem'><h3 style={{textDecoration: 'underline'}}>Elsewhere</h3></ListItem>
+										<ListItem fontSize='1.3rem'><h3 style={{textDecoration: 'underline'}}>Elsewhere</h3></ListItem>
 										<ListItem fontSize='1.2rem' pt='1rem'><p>The Store<br/>555 E. Main St.<br/>Townsville, CA  12345</p></ListItem>
                                         <ListItem fontSize='1.2rem' pt='1rem'><p>The Store<br/>555 E. Main St.<br/>Townsville, CA  12345</p></ListItem>
                                         <ListItem fontSize='1.2rem' pt='1rem'><p>The Store<br/>555 E. Main St.<br/>Townsville, CA  12345</p></ListItem>
