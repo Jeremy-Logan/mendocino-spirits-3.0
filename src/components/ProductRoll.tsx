@@ -160,7 +160,6 @@ export default () => (
 								title
 								templateKey
 								description
-								path
 								sortnumber
 								colorscheme
 								featuredimage {
