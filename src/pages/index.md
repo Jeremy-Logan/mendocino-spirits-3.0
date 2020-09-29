@@ -3,10 +3,9 @@ templateKey: index-page
 title: Extraordinary spirits awaken and inspire the mind.
 image: /img/mendocino-sprits-bourbon-header.jpg
 heading: Great coffee with a conscience
-subheading: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-  commodo consequat.
+subheading: We use only quality ingredients, distilled with great care to bring
+  to you offerings that are delicious on purpose.  Reawakening that portion of
+  the palette lost in antiquities wake.
 mainpitch:
   title: Why Kaldi
   description: >
