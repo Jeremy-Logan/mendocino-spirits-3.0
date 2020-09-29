@@ -8,6 +8,7 @@ fields:
     required: false
   label: Template Key
   hidden: true
+  default: product-post
 - name: sortnumber
   type: number
   label: Sort number
