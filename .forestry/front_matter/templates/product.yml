@@ -1,5 +1,5 @@
 ---
-label: Product
+label: Products
 hide_body: false
 fields:
 - name: templateKey
