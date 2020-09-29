@@ -3,8 +3,8 @@ templateKey: product-post
 sortnumber: 2
 colorscheme: wheat
 title: Captain Fletcher's Private Reserve
-description: |-
-  Charles Fletcher, a sailor, ship's carpenter, and whale boat captain, was the
+description: |2-
+        Charles Fletcher, a sailor, ship's carpenter, and whale boat captain, was the
     first settler of what became the town of Navarro near the mouth of the Navarro
     River. Captain Fletcher was highly respected as a businessman and as a
     citizen. He was generous with his employees, large hearted, fearless, and
