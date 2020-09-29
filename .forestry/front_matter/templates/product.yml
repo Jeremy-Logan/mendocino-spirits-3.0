@@ -58,4 +58,5 @@ fields:
   label: Color Scheme
   description: Select the background color and wheat color for this product section
 pages:
+- mendocino-spirits-3.0/src/pages/products/captain-fletcher-s-private-reserve.md
 - mendocino-spirits-3.0/src/pages/products/straight-bourbon-whiskey.md
