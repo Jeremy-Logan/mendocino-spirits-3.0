@@ -1,6 +1,6 @@
 ---
 label: Products
-hide_body: false
+hide_body: true
 fields:
 - name: templateKey
   type: text
