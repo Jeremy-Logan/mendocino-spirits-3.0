@@ -6,6 +6,6 @@ title: Straight Bourbon Whiskey
 description: Mendocino Spirits Bourbon is the creation of Crispin Cain. Aromas of
   butterscotch, caramel, toffee, fudge, vanilla, and maple syrup. It finishes soft
   and smooth with malt and toasted grains.
-featuredimage: ''
+featuredimage: "/static/uploads/ms-bourbonbottle.png"
 
 ---
