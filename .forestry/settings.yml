@@ -10,7 +10,7 @@ sections:
   create: documents
   match: "**/.md*"
 upload_dir: static/img
-public_path: https://compassionate-almeida-272cd5.netlify.app/upload
+public_path: https://compassionate-almeida-272cd5.netlify.app/static/img
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
