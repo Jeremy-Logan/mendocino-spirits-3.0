@@ -57,7 +57,8 @@
     "build": "npm run clean && gatsby build",
     "develop": "npm run clean && gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "forestry:preview": "gatsby develop -p 8080 -H 0.0.0.0"
   },
   "devDependencies": {
     "@types/node": "^14.6.0",
